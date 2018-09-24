@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SimChooser">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="Choose Sim:"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:id="@+id/sim1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sim1tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="Sim 1:"/>
+
+        <CheckBox
+            android:id="@+id/ncell1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ncell"
+            android:background="@color/cardview_shadow_start_color"
+            android:textSize="18dp"
+            android:textColor="#853fba"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/ntc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#5a3fba"
+            android:background="@color/cardview_shadow_start_color"
+            android:text="NTC" />
+
+        <CheckBox
+            android:id="@+id/smart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:textColor="#da2d35"
+            android:text="Smart" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sim2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sim2tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="Sim 2:"/>
+
+        <CheckBox
+            android:id="@+id/ncell2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#853fba"
+            android:textSize="18dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:text="Ncell" />
+
+        <CheckBox
+            android:id="@+id/ntc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#5a3fba"
+            android:textSize="18dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:text="NTC" />
+
+        <CheckBox
+            android:id="@+id/smart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#da2d35"
+            android:background="@color/cardview_shadow_start_color"
+            android:text="Smart" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:typeface="serif"
+        android:gravity="center_horizontal"
+        android:text="[Tip:If your phone support dual sim then select dual sim otherwise select only Sim 1.]"/>
+    <Button
+        android:id="@+id/goBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:onClick="btnGo"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"/>
+
+
+</LinearLayout>

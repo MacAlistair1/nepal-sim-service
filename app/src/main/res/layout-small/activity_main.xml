@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backsim">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Your SiM"
+            android:textAlignment="center"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:background="@color/black_overlay"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="ncellServices"
+            android:id="@+id/layoutNcell"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#952d2c2e"
+                android:gravity="end"
+                android:layout_marginRight="0dp">
+
+                <ImageView
+                    android:id="@+id/torchChange"
+                    android:layout_width="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_torch_off"
+                    android:onClick="torchOpen"
+                    android:layout_height="30dp"/>
+
+                <ImageView
+                    android:id="@+id/battery_icon"
+                    android:layout_width="23dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="20dp"
+                    android:background="#688b8888"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="95dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/battery"
+                    android:textSize="15dp"
+                    android:background="#688b8888"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="195dp"
+                android:layout_marginTop="-15dp"
+                android:src="@drawable/ncell" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Ncell Services"
+                android:textSize="16dp"
+                android:textColor="#04fbff"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c39fa79f"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="8dp"
+                android:textColor="#8e978e"
+                android:background="#9b2626"
+                android:text="Click this to activate/deactivate, subscribe different Data Packs,SmS Pack, Voice Pack , Direct Recharge by entering Pin Code or through Scan Card and Other Many more stuffs of Ncell SiM."
+                android:id="@+id/textView3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutNtc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:onClick="ntcServices"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="195dp"
+                android:src="@drawable/ntc"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Ntc Services"
+                android:textSize="16dp"
+                android:textColor="#04fbff"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c39fa79f"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="8dp"
+                android:background="#9b2626"
+                android:textColor="@color/darker_gray"
+                android:text="Click this to activate/deactivate, subscribe different Data Packs,SmS Pack, Voice Pack , Direct Recharge by entering Pin Code or through Scan Card and Other Many more stuffs of Ntc SiM."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSmart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:onClick="smartServices"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="195dp"
+                android:src="@drawable/smart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="SmartCell Services"
+                android:textSize="16dp"
+                android:textColor="#04fbff"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c39fa79f"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="8dp"
+                android:background="#9b2626"
+                android:textColor="#8e978e"
+                android:text="Click this to activate/deactivate, subscribe different Data Packs,SmS Pack, Voice Pack , Direct Recharge by entering Pin Code or through Scan Card and Other Many more stuffs of Smart Cell SiM."/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutImportant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:onClick="importantNum"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="195dp"
+                android:src="@drawable/tant"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Important Numbers"
+                android:textSize="16dp"
+                android:textColor="#04fbff"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c39fa79f"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="11dp"
+                android:background="#9b2626"
+                android:textColor="@color/darker_gray"
+                android:text="Click this to make a direct call to any Emergency Numbers Like Blood Bank, different Hospital Phone Number etc."
+                android:id="@+id/textView4" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDialer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:onClick="openDialer"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cardview_light_background"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/pink"
+            android:text="Dialer"
+            android:textStyle="bold"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cardview_light_background"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timerSms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:onClick="timerSmsBtn"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calcu"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/cardview_light_background"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/pink"
+                android:text="Calculator"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/cardview_light_background"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/problem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="8dp"
+            android:textColor="#fff"
+            android:clickable="true"
+            android:onClick="ClearMe"
+            android:gravity="center_horizontal"
+            android:text="@string/pb"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutQts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/darkblue"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/day"
+                android:textSize="15dp"
+                android:text="@string/day"
+                android:textAlignment="center"
+                android:textColor="#ff0000"
+                android:textStyle="bold"
+                android:fontFamily="monospace"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/myquote"
+                android:textSize="11dp"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:fontFamily="monospace"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

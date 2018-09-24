@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res-auto">
+
+    <!--<item
+        android:id="@+id/torch"
+        android:title="Torch"
+        android:icon="@drawable/ic_torch"
+        apps:showAsAction="always"/>-->
+
+
+    <item android:title="Diagnosis">
+        <menu>
+            <item
+                android:id="@+id/clear"
+                android:title="Clear Data" />
+        </menu>
+    </item>
+
+
+    <item android:id="@+id/rate"
+        android:title="Rate this App.">
+    </item>
+
+    <item android:id="@+id/share"
+        android:title="Share">
+    </item>
+
+    <item android:id="@+id/feed"
+        android:title="Send FeedBack">
+    </item>
+
+    <item
+        android:id="@+id/abtus"
+        android:title="About Us"
+        />
+    <item
+        android:id="@+id/exit"
+        android:title="Main Menu"
+        />
+
+</menu>

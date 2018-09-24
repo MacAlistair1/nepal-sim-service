@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ncell_transfer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Enter the Ntc phone Number of destination, Amount in Rs. and Security Code of Yours."
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/textView2"
+        android:hint="Balance Transfer To"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:id="@+id/phNo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/phNo"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="Amount To Transfer"
+        android:inputType="number"
+        android:id="@+id/rupee" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/rupee"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="Security Code"
+        android:inputType="numberPassword"
+        android:id="@+id/code" />
+
+    <Button
+        android:text="Transfer Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="transferAmt"
+        android:id="@+id/rbtn"
+        android:layout_below="@+id/code"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@android:style/Widget.Holo.Button" />
+
+</RelativeLayout>

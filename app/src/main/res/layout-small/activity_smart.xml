@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backsim"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/balance"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:text="Check \nBalance"
+                android:textSize="10dp"
+                android:onClick="checkbal"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:id="@+id/data"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:onClick="remain"
+                android:text="Remain \nVolume" />
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:id="@+id/customer"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:text="Customer \nCare"
+                android:onClick="care" />
+
+            <Button
+                android:id="@+id/bonus"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:text="Bonus \nCheck"
+                android:onClick="checkbonus"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:id="@+id/tunes"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:text="Smart \nTunes"
+                android:onClick="tunes"/>
+
+            <Button
+                android:id="@+id/own"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:text="Your \nNumber"
+                android:onClick="own"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:id="@+id/pack"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:text="Data \nPack"
+                android:onClick="pack"
+                />
+
+            <Button
+                android:id="@+id/recharge"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:text="Recharge"
+                android:onClick="charge"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backsim"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/balance"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:text="Check \nBalance"
+                        android:textSize="10dp"
+                        android:onClick="checkbal"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/data"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:onClick="remain"
+                        android:text="Remain \nVolume" />
+
+                    <Button
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/customer"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:text="Customer \nCare"
+                        android:onClick="care" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/tunes"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:text="CRBT Tunes"
+                        android:onClick="tunes"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/recharge"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:text="Recharge"
+                        android:onClick="recharge"/>
+
+                    <Button
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/number"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:onClick="number"
+                        android:text="Your Num."/>
+                </TableRow>
+
+                <TableRow></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/pack"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:text="Data\nPack"
+                        android:onClick="pack"
+                        />
+
+                    <Button
+                        android:id="@+id/transfer"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:text="Transfer\nAmount"
+                        android:onClick="transfer"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/fnf"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:text="FNF"
+                        android:onClick="Fnf"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+</ScrollView>

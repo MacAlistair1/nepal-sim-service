@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mis.community.nepalsimservices"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission." />
+    <uses-permission android:name="android.permission.ACCESINTERNETS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/sim_round_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LauncherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Full">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".important" />
+        <activity
+            android:name=".NcellActivity"
+            android:label="Ncell Services"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NtcActivity"
+            android:label="Ntc Services"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SmartActivity"
+            android:label="Smart Services"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".About"
+            android:theme="@style/Full" />
+        <activity
+            android:name=".feedBack"
+            android:theme="@style/Full" />
+
+        <service
+            android:name=".myService"
+            android:exported="false"
+            android:externalService="true"
+            tools:node="merge" />
+
+        <activity
+            android:name=".DialerActivity"
+            android:theme="@style/Full" />
+        <activity android:name=".NtcDataPack" />
+        <activity android:name=".SmartDataPack" />
+        <activity android:name=".CalculatorActivity"
+            android:theme="@style/Full"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Nepal Sim Services</string>
+
+    <string name="pb"><u>Problem Occurs? Click Me! and Remove this App from Recent tray</u></string>
+
+    <string name="app_info">
+        <b>
+            \tDesigned By: AJ FLASH Creation\n
+            \tDeveloped By: MIS COMMUNITY\n
+            \tPhone no.: ....0463471\n
+            \tE-mail: replymisclive@gmail.com\n
+            \tAddres: Banepa-1,Kavre
+            \n\n\n
+        </b>
+    </string>
+
+    <string name="app_info2">
+        \n\n
+        <b><u>Complain, Suggestion &amp; Rate this App.</u></b>\n
+        \tIf you found any type of error into this App you can send a mail at our
+        Account
+        and we will try to fix that type of error.Your suggestion and Review about
+        this app. is very important for us so do not forget to leave a comment or a mail.
+        Please Rate this App.
+        <b>\n\tE-mail:-replymisclive@gmail.com/Lamichhaneaj@gmail.com(Personal)\n
+        \tFacebook:-Mac.alistair1\tor\tAj.tag1\n
+        \tInstagram:-awaymac</b>
+
+    </string>
+
+    <string name="ab">
+        <b>About MIS Community:</b>\n MIS Community is brought to you by <b>MAC IT STUDIO</b> the YT Channel.
+        The Official page of <b>MIS Community</b> is available at:- <u>
+        www.facebook.com/misview</u>.
+        You can see Many tutorials of different Programming Languages and many more other stuffs.
+    </string>
+
+    <string name="set"><b>Steps:</b>\n
+            In Settings->Mobile Networks->Access Point Names->New APN\n\n
+            Fill up different item with Following:-\n
+            <b>Name:</b>ncellgprs\n
+            <b>APN:</b>web\n
+            <b>Proxy:</b>10.68.1.149\n
+            <b>Port:</b>8080\n
+            <b>MMC:</b>429\n
+            <b>MNC:</b>02\n
+            <b>APN Type:</b>internet\n\n
+        <i>[Note:After Saving these APN Just Turn your Airplane Mode is ON 10sec. and Turn OFF Airplane Mode or Restart your Mobile.]</i>
+</string>
+
+    <string name="day">
+       <b><u>QuotE oF thE DaY\n</u></b>
+   </string>
+
+
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backsim"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/balance"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:textSize="10dp"
+                android:text="ब्यालेन्स हेर्नुहोस्"
+                android:onClick="checkbal"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:id="@+id/data"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:onClick="remain"
+                android:text="Remain Vol./Sms" />
+        </TableRow>
+            <TableRow>
+
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/customer"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:text="Customer Care"
+                    android:onClick="care" />
+
+                <Button
+                    android:id="@+id/tunes"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:text="PRBT Tunes"
+                    android:onClick="tunes"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:id="@+id/number"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:onClick="number"
+                android:text="Your Number"
+                />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:id="@+id/time"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:onClick="time"
+                android:text="Current Time"
+                />
+        </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/recharge"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:text="रिचार्ड गर्नुहोस् "
+                    android:onClick="charge"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/sms"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:onClick="sms"
+                    android:text="Sms Pack"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/pack"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:onClick="pack"
+                    android:text="Data Pack"/>
+
+                <Button
+                    android:id="@+id/voice"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:text="Voice Pack"
+                    android:onClick="voice"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/loan"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:text="Ncell Loan"
+                    android:onClick="loan"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/transfer"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:text="Transfer Balance"
+                    android:onClick="transfer"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/my5"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:text="My5"
+                    android:onClick="my5"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/love"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:text="Love Detector"
+                    android:onClick="detect"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/app"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:text="Ncell App"
+                    android:onClick="app"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/rechargeOthers"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:onClick="Rothers"
+                    android:text="Recharge\nOthers\nPhone"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+</ScrollView>

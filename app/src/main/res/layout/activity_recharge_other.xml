@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ncell_transfer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Enter the Ncell phone Number of destination to recharge and 16 digit Pin Number."
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/textView2"
+        android:hint="Recharge To"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:id="@+id/phNo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/phNo"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="Enter 16 digit Pin no."
+        android:id="@+id/rupee" />
+
+    <Button
+        android:text="Recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="transferAmt"
+        android:id="@+id/tranBtn"
+        android:layout_below="@+id/rupee"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@android:style/Widget.Holo.Button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip: यहाँ बाट तपाईले Recharge card मा भएको रकम अरुको NCELL नम्बरमा Recharge गर्दीन सक्नुहुन्छ |"
+        android:textSize="16dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@+id/tranBtn"
+        android:id="@+id/textView3" />
+
+</RelativeLayout>

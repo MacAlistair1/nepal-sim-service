@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/callwith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call with"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/sim1Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_phone"/>
+
+        <TextView
+            android:id="@+id/sim1T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text=" Sim 1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sim2Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone1"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_phone"/>
+
+        <TextView
+            android:id="@+id/sim2T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text=" Sim 2"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
